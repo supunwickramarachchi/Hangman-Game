@@ -19,6 +19,6 @@ Welcome to the Hangman Game! This is a simple text-based game written in Python 
 - Provides visual representation of the hangman stages.
 
 ## Author
-- [Supun Wickramarachchi](https://github.com/your_username)
+- [Supun Wickramarachchi](https://github.com/supunwickramarachchi)
 
 Feel free to customize this game, add more features, or improve the interface. Have fun playing Hangman!
