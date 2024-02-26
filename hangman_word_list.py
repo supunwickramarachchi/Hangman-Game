@@ -1,0 +1,15 @@
+word_list = [
+    "creative",
+    "coordinator",
+    "projects",
+    "protector",
+    "creative",
+    "thinking",
+    "scientist",
+    "generation",
+    "coconut",
+    "phone",
+    "telephone",
+    "software",
+    "astronomy",
+    "starship"]
