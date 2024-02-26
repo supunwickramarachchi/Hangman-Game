@@ -10,21 +10,23 @@ word_length = len(chosen_word)
 
 lives = 6
 
-print(logo)
-
 display = []
 
 for _ in range(word_length):
     display += "_"
 
+player_name = input("Before get started tell me your name: ").title()
+print(logo)
+print(f"Let's start the Hangman Game {player_name},")
+
 end_of_game = False
 while not end_of_game:
-    guess = input("Guess a letter: ").lower()
+    guess = input(f"Guess a letter: ").lower()
 
     clear()
 
     if guess in display:
-        print(f"You already guessed {guess}")
+        print(f"{player_name}, you already guessed {guess}")
 
     for position in range(word_length):
         letter = chosen_word[position]
@@ -36,12 +38,12 @@ while not end_of_game:
         lives -= 1
         if lives == 0:
             end_of_game = True
-            print("You lose!")
+            print(f"You lose! {player_name}")
 
     print(f"{' '.join(display)}")
 
     if "_" not in display:
         end_of_game = True
-        print("You win!")
+        print(f"You win! {player_name}")
 
     print(stages[lives])
